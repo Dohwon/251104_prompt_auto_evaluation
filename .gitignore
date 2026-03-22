@@ -1,0 +1,66 @@
+
+# >>> codex-auto-ignore >>>
+# secrets/env
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# private/local data
+*.db
+*.sqlite
+*.sqlite3
+*.local.json
+*.local.yaml
+*.local.yml
+*.local.toml
+
+# runtime/log/cache
+logs/
+*.log
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# node/web build
+node_modules/
+dist/
+build/
+.next/
+
+# python venv
+.venv/
+venv/
+
+# os/editor
+.DS_Store
+Thumbs.db
+.vscode/
+# <<< codex-auto-ignore <<<
+
+# >>> codex-sensitive-ignore >>>
+# env/secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+env.template
+
+# prompt/core assets
+prompts/
+prompt/
+*_prompt.txt
+*_prompt.md
+judge_prompt.txt
+model_a_prompt.txt
+model_b_prompt.txt
+
+# local/private artifacts
+*.db
+*.sqlite
+*.sqlite3
+*.key
+*.pem
+*:Zone.Identifier
+# <<< codex-sensitive-ignore <<<
